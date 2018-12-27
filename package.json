@@ -1,0 +1,22 @@
+{
+  "name": "kovabotv2",
+  "version": "1.0.0",
+  "description": "twitch bot written in javascript with node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajwaters061491/Kovabotv2.git"
+  },
+  "author": "Alvin Waters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajwaters061491/Kovabotv2/issues"
+  },
+  "homepage": "https://github.com/ajwaters061491/Kovabotv2#readme",
+  "dependencies": {
+    "tmi.js": "^1.2.1"
+  }
+}
