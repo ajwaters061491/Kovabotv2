@@ -30,8 +30,18 @@ client.connect();
 
 client.on("chat", function (channel, userstate, message, self) {   //TODO wrap in a timer of around 5 seconds to prevent spamming, add message for on close.
     //ignore chat from the bot itself
-    if (self) return;
-  
-    commandParse.read(channel, userstate, message, client); //calls the function to handle chat parsing
-});
+    if (!self) {
 
+        if (chatLimiter === true) { //checks for chat status
+
+            commandParse.read(channel, userstate, message, client); //calls the function to handle chat parsing
+            
+            chatLimiter = false; //sets back to false
+
+            setTimeout(() => { //runs timer to set back to true afterwards
+                chatLimiter = true;
+            }, 3000);
+
+        } 
+    }
+});
