@@ -1,4 +1,6 @@
 //file to handle commands
+const query = require('./weather.js');
+
 module.exports = { 
     read : function (channel, userstate, message, client) {
         //commands go here
@@ -13,6 +15,12 @@ module.exports = {
         }
         else if (message.toLowerCase() === '!ree') {
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
+        }
+        else if (message.toLowerCase().startsWith("!weather ")) { //what am I even doing with my life
+            let weatherQuery = message.substr(9, (message.length - 9));
+            
+            query.weather(weatherQuery, channel, userstate, client)
         } 
     }
 }
+
