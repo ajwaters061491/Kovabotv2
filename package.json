@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ajwaters061491/Kovabotv2#readme",
   "dependencies": {
+    "node-fetch": "^2.3.0",
+    "openweathermap-node": "^1.1.2",
     "tmi.js": "^1.2.1"
   }
 }
