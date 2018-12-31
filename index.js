@@ -1,12 +1,12 @@
 const tmi = require("tmi.js");
 const info = require('./botinfo.json');
-const commandParse = require('./commands.js')
-var chatLimiter = true;
+const commandParse = require('./commandParse.js')
+
 
 //Kovabotv2
 
 
-const options = {
+const options = { //defines connection object to be passed to the tmi.client function
     options: {
         debug: true,
         clientId: info.username //TWITCH_CLIENT_ID
@@ -25,23 +25,11 @@ const options = {
 
 const client = new tmi.client(options);
 
-//Connect the client to the server..
+//Connects to the client to the server
 client.connect();
 
-client.on("chat", function (channel, userstate, message, self) {   //TODO wrap in a timer of around 5 seconds to prevent spamming, add message for on close.
-    //ignore chat from the bot itself
-    if (!self) {
+client.on("chat", function (channel, userstate, message, self) {   //TODO Move our timer function into a seperate js file. 
 
-        if (chatLimiter === true) { //checks for chat status
+    commandParse.test(channel, userstate, message, client, self); //calls the chat timer parsing function
 
-            commandParse.read(channel, userstate, message, client); //calls the function to handle chat parsing
-            
-            chatLimiter = false; //sets back to false
-
-            setTimeout(() => { //runs timer to set back to true afterwards
-                chatLimiter = true;
-            }, 3000);
-
-        } 
-    }
 });
