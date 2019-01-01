@@ -1,5 +1,4 @@
 const info = require('./botinfo.json');
-const fetch = require('node-fetch'); //
 const OpenWeatherMapHelper = require("openweathermap-node");
 
 const helper = new OpenWeatherMapHelper(
