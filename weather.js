@@ -32,7 +32,7 @@ module.exports = {
                     else{
                         let tempFahrenheit = Math.floor(currentWeather.main.temp * (9/5) - 459.67);
 
-                        client.action(channel, `@${userstate.username} the weather in ${currentWeather.name} is ${currentWeather.weather[0].main} with a current temp 
+                        client.action(channel, `@${userstate.username} the weather in ${currentWeather.name} is '${currentWeather.weather[0].main}' with a current temp 
                         of ${tempFahrenheit} degrees.`);
                     }
                 });

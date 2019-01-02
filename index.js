@@ -3,8 +3,6 @@ const info = require('./botinfo.json');
 const commandParse = require('./commandParse.js')
 
 
-//Kovabotv2
-
 
 const options = { //defines connection object to be passed to the tmi.client function
     options: {

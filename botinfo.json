@@ -1,6 +1,8 @@
 {
-    "username" : "",
+    "username" : "Kovabotv2",
     "password" : "oauth:",
     "owner" : "xelkova",
-    "weatherKey" : ""
+    "weatherKey" : "",
+    "cleverbotUser": "",
+    "cleverbotKey" : ""
 }

@@ -1,5 +1,6 @@
 //file to handle commands
-const query = require('./weather.js');
+const weatherquery = require('./weather.js');
+const cleverquery = require('./cleverbot.js');
 //const users = require('./users.json'); to be used for setup of multi-user system
 
 module.exports = { 
@@ -18,9 +19,14 @@ module.exports = {
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
         }
         else if (message.toLowerCase().startsWith("!weather ")) { //!weather
-            let weatherQuery = message.substr(9, (message.length - 9));
+            let queryString = message.substr(9, (message.length - 9));
             
-            query.weather(weatherQuery, channel, userstate, client)
+            weatherquery.weather(queryString, channel, userstate, client);
+        }
+        else if (message.toLowerCase().startsWith("@kovabotv2 ")) { //@Kovabotv2
+            let queryString = message.substr(11, (message.length - 11));
+
+            cleverquery.clever(queryString, channel, userstate, client);
         }
         else if (message.toLowerCase() === '!kovabotv2' || message.toLowerCase() === '!kovabot') {//!kovabot or !Kovabotv2
             client.action(channel, `@${userstate.username} Kovabotv2 is a simple chat bot written with node.js. The project github can be found 
