@@ -15,8 +15,7 @@ module.exports = {
         
                 setTimeout(() => { //runs timer for 3 seconds to set back to true afterwards
                     chatLimiter = true;
-                }, 3000);
-        
+                }, 3000);       
             } 
         } 
     }

@@ -7,10 +7,10 @@ module.exports = {
     read : function (channel, userstate, message, client) {
         //commands go here
         if (message.toLowerCase() === '!hi' || message.toLowerCase() === '!hello') { //!hello
-            client.action(channel, `Hello @${userstate.username}, and welcome to the stream!`,);
+            client.action(channel, `Hello @${userstate.username}, and welcome to the stream!`,); 
         } 
         else if (message.toLowerCase() === '!twitter') {//!twitter
-            client.action(channel, `@${userstate.username} ${users.xelkova.twitter}`);
+            client.action(channel, `@${userstate.username} ${users.xelkova.twitter}`); 
         }
         else if (message.toLowerCase() === '!github') {//!github
             client.action(channel, `@${userstate.username} ${users.xelkova.github}`);
