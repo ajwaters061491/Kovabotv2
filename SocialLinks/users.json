@@ -1,8 +1,8 @@
 { 
     "xelkova" : {
-        "twitter" : "my twitter here",
-        "github" : "my github here",
-        "defgithub" : "my github also here, but the default in the case the other channels have none"
+        "twitter" : "my twitter message here",
+        "github" : "my github message here",
+        "defgithub" : "my github message also here, but the default in the case the other channels have none"
     },
     "otherUser1" : {
         "reference1" : "information here",

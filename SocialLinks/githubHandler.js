@@ -4,7 +4,7 @@ const users = require('./users.json');
 module.exports = { 
     githubHandler : function (channel) { 
         if (channel === '#xelkova') {
-            return `${users.xelkova.github}`; //${users.xelkova.twitter}
+            return `${users.xelkova.github}`; 
         }
         else {
             return `${defgithub}`;
