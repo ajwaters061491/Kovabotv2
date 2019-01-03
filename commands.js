@@ -1,7 +1,9 @@
 //file to handle commands
 const weatherquery = require('./weather.js');
 const cleverquery = require('./cleverbot.js');
-const users = require('./users.json'); 
+
+const twit_Handle = require('./SocialLinks/twitterHandler.js');
+const git_Handle = require('./SocialLinks/githubHandler.js')
 
 module.exports = { 
     read : function (channel, userstate, message, client) {
@@ -10,10 +12,10 @@ module.exports = {
             client.action(channel, `Hello @${userstate.username}, and welcome to the stream!`,); 
         } 
         else if (message.toLowerCase() === '!twitter') {//!twitter
-            client.action(channel, `@${userstate.username} ${users.xelkova.twitter}`); 
+            client.action(channel, `@${userstate.username} ${twit_Handle.twitterhandler(channel)}`); //will be in the form @username 'insert message here'
         }
         else if (message.toLowerCase() === '!github') {//!github
-            client.action(channel, `@${userstate.username} ${users.xelkova.github}`);
+            client.action(channel, `@${userstate.username} ${git_Handle.githubHandler(channel)}`); //will be in the form @username 'insert message here'
         }
         else if (message.toLowerCase() === '!ree') {//!ree
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
