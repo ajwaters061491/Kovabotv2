@@ -1,7 +1,7 @@
 //file to handle commands
 const weatherquery = require('./weather.js');
 const cleverquery = require('./cleverbot.js');
-//const users = require('./users.json'); to be used for setup of multi-user system
+const users = require('./users.json'); 
 
 module.exports = { 
     read : function (channel, userstate, message, client) {
@@ -10,10 +10,10 @@ module.exports = {
             client.action(channel, `Hello @${userstate.username}, and welcome to the stream!`,);
         } 
         else if (message.toLowerCase() === '!twitter') {//!twitter
-            client.action(channel, `@${userstate.username} my twitter is @Kovapls! Follow for shitposts and unfunny content!`);
+            client.action(channel, `@${userstate.username} ${users.xelkova.twitter}`);
         }
         else if (message.toLowerCase() === '!github') {//!github
-            client.action(channel, `@${userstate.username} my github is ajwaters061491`);
+            client.action(channel, `@${userstate.username} ${users.xelkova.github}`);
         }
         else if (message.toLowerCase() === '!ree') {//!ree
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
@@ -32,8 +32,8 @@ module.exports = {
             client.action(channel, `@${userstate.username} Kovabotv2 is a simple chat bot written with node.js. The project github can be found 
             at https://github.com/ajwaters061491/Kovabotv2`);
         }
-        else if (message.toLowerCase() === '!commands') {
-            client.action(channel, `@${userstate.username} current commands are: !hi, !twitter, !github, !ree, !weather. For usage and definitions, check the bots github page!`);
+        else if (message.toLowerCase() === '!commands') { //!commands
+            client.action(channel, `@${userstate.username} current commands are: !hi, !twitter, !github, !ree, !weather and !kovabotv2. You can talk to the bot with @kovabotv2! For usage and definitions, check the bots github page!`);
         } 
     }
 }
