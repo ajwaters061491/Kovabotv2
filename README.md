@@ -41,7 +41,7 @@ The streamer's github page will be linked. May not work for all streamers.
 
 ## **!ree**
 
-##The bot will REE in rage!
+The bot will REE in rage!
 
 
 
