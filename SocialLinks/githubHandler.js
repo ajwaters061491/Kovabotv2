@@ -7,7 +7,7 @@ module.exports = {
             return `${users.xelkova.github}`; 
         }
         else {
-            return `${defgithub}`;
+            return `${users.xelkova.defgithub}`;
         }
         
     }

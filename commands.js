@@ -1,6 +1,6 @@
 //file to handle commands
-const weatherquery = require('./weather.js');
-const cleverquery = require('./cleverbot.js');
+const weatherquery = require('./Utilities/weather.js');
+const cleverquery = require('./Utilities/cleverbot.js');
 
 const twit_Handle = require('./SocialLinks/twitterHandler.js');
 const git_Handle = require('./SocialLinks/githubHandler.js')
