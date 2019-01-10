@@ -1,3 +1,4 @@
+//handles queries to OpenWeatherMap
 const info = require('../botinfo.json');
 const OpenWeatherMapHelper = require("openweathermap-node");
 

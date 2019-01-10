@@ -1,6 +1,7 @@
 //file to handle commands
 const weatherquery = require('./Utilities/weather.js');
 const cleverquery = require('./Utilities/cleverbot.js');
+const wordquery = require('./Utilities/dictionary.js');
 
 const twit_Handle = require('./SocialLinks/twitterHandler.js');
 const git_Handle = require('./SocialLinks/githubHandler.js')
@@ -24,6 +25,11 @@ module.exports = {
             let queryString = message.substr(9, (message.length - 9));
             
             weatherquery.weather(queryString, channel, userstate, client);
+        }
+        else if (message.toLowerCase().startsWith("!define " )) { //!define
+            let queryString = message.substr(8, (message.length - 8));
+
+            wordquery.define(queryString, channel, userstate, client);
         }
         else if (message.toLowerCase().startsWith("@kovabotv2 ")) { //@Kovabotv2
             let queryString = message.substr(11, (message.length - 11));
