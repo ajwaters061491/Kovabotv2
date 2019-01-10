@@ -26,8 +26,10 @@ const client = new tmi.client(options);
 //Connects to the client to the server
 client.connect();
 
-client.on("chat", function (channel, userstate, message, self) {   //TODO Move our timer function into a seperate js file. 
-
+client.on("chat", function (channel, userstate, message, self) {   
     commandParse.test(channel, userstate, message, client, self); //calls the chat timer parsing function
+});
 
+client.on("disconnected", function (reason) {
+    console.log(reason);
 });
