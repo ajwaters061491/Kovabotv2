@@ -52,7 +52,13 @@ Please note, in the case of City Name, only major cities can be queried, so it i
 
 
 
+## **!define 'word'**
+
+Can be called in the format '!define word', and will return a definition of the word.
+
+
+
 ## **@Kovabotv2 'stuff to say'**
 
-Can be called in the format '@Kovabotv2 stuff to say'. The space between text is necessary to get a proper query. 
+Can be called in the format '@Kovabotv2 stuff to say', and is used to... have a conversation with the bot. 
 Please note, I have literally no control over what the response will be. 
