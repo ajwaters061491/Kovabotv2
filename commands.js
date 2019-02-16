@@ -26,8 +26,8 @@ module.exports = {
         else if (message.toLowerCase() === '!shutdown') { //!shutdown
             shutdown.force(channel, userstate, client);
         }
-        else if (message.toLowerCase() === '!issue') { //!issue
-            email.contact(channel, userstate, client);                                 
+        else if (message.toLowerCase() === '!alert') { //!issue
+            email.alert(channel, userstate, client);                                 
         }
         else if (message.toLowerCase().startsWith("!weather ")) { //!weather
             let queryString = message.substr(9, (message.length - 9));

@@ -43,7 +43,7 @@ Please note, in the case of City Name, only major cities can be queried, so it i
 
 
 
-## **!issue**
+## **!alert**
 
 This is a command to directly email me an alert if there is an issue with the bot.
 
