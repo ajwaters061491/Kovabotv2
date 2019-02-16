@@ -3,15 +3,6 @@ A simple twitch chat bot using the tmi.js library written in node.js.
 
 
 
-**Package Links**
-
-https://www.npmjs.com/package/tmi.js
-
-https://www.npmjs.com/package/openweathermap-node
-
-https://www.npmjs.com/package/cleverbot.io
-
-
 
 
 # **Commands explanation**
@@ -49,6 +40,12 @@ The bot will REE in rage!
 
 Can be called in the format '!weather 00000' for zip code, or '!weather City Name', and will return a basic overview of the weather for that area!
 Please note, in the case of City Name, only major cities can be queried, so it is recommended you use zip code.
+
+
+
+## **!issue**
+
+This is a command to directly email me an alert if there is an issue with the bot.
 
 
 

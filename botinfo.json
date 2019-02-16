@@ -1,9 +1,11 @@
 {
-    "username" : "",
-    "password" : "oauth:",
+    "username" : "Kovabotv2",
+    "password" : "",
     "owner" : "xelkova",
     "weatherKey" : "",
     "cleverbotUser": "",
     "cleverbotKey" : "",
-    "wordnikKey" : ""
+    "wordnikKey" : "",
+    "gmailUserName": "",
+    "gmailPass": ""
 }
