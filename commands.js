@@ -2,6 +2,7 @@
 const weatherquery = require('./Utilities/weather.js');
 const cleverquery = require('./Utilities/cleverbot.js');
 const wordquery = require('./Utilities/dictionary.js');
+const shutdown = require('./Utilities/shutdown.js');
 
 const twit_Handle = require('./SocialLinks/twitterHandler.js');
 const git_Handle = require('./SocialLinks/githubHandler.js')
@@ -20,6 +21,9 @@ module.exports = {
         }
         else if (message.toLowerCase() === '!ree') {//!ree
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
+        }
+        else if (message.toLowerCase() === '!shutdown') { //!shutdown
+            shutdown.force(channel, userstate, client);
         }
         else if (message.toLowerCase().startsWith("!weather ")) { //!weather
             let queryString = message.substr(9, (message.length - 9));
