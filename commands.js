@@ -6,7 +6,9 @@ const shutdown = require('./Utilities/shutdown.js');
 const email = require('./Utilities/email_issue.js');
 
 const twit_Handle = require('./SocialLinks/twitterHandler.js');
-const git_Handle = require('./SocialLinks/githubHandler.js')
+const insta_Handle = require('./SocialLinks/instagramHandler.js');
+const fb_Handle = require('./SocialLinks/facebookHandler.js');
+const git_Handle = require('./SocialLinks/githubHandler.js');
 
 module.exports = { 
     read : function (channel, userstate, message, client) {
@@ -15,10 +17,16 @@ module.exports = {
             client.action(channel, `Hello @${userstate.username}, and welcome to the stream!`,); 
         } 
         else if (message.toLowerCase() === '!twitter') {//!twitter
-            client.action(channel, `@${userstate.username} ${twit_Handle.twitterhandler(channel)}`); //will be in the form @username 'insert message here'
+            client.action(channel, `@${userstate.username} ${twit_Handle.twitterhandler(channel)}`); 
+        }
+        else if (message.toLowerCase() === '!instagram') {//!instagram
+            client.action(channel, `@${userstate.username} ${insta_Handle.instagramhandler(channel)}`);
+        }
+        else if (message.toLowerCase() === '!facebook') {//!facebook
+            client.action(channel, `@${userstate.username} ${fb_Handle.facebookhandler(channel)}`);
         }
         else if (message.toLowerCase() === '!github') {//!github
-            client.action(channel, `@${userstate.username} ${git_Handle.githubHandler(channel)}`); //will be in the form @username 'insert message here'
+            client.action(channel, `@${userstate.username} ${git_Handle.githubHandler(channel)}`);
         }
         else if (message.toLowerCase() === '!ree') {//!ree
             client.action(channel, `@${userstate.username} REEEEEEEEEEEEEEE`);
