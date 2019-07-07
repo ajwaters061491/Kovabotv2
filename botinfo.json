@@ -1,13 +1,13 @@
 {
     "username" : "Kovabotv2",
-    "password" : "",
+    "password" : "oauth:d93xj0eljjgqkj2lfag19zialuxdyc",
     "owner" : "xelkova",
-    "weatherKey" : "",
+    "weatherKey" : "f39b364955a1d4b3c53aeba7a138d5b7",
     "cleverbotUser": "",
     "cleverbotKey" : "",
-    "wordnikKey" : "",
-    "twilioSID": "",
-    "twilioToken": "",
-    "twilioNumber": "",
-    "myNumber": ""
+    "wordnikKey" : "241cc869c07802bfd300505e4820d2e620d0063382f8ed23d",
+    "twilioSID": "AC79baa341d16dbb1d71afcc9af44d91cb",
+    "twilioToken": "33ccb6e770f04828df452db545651ac3",
+    "twilioNumber": "+16782643455",
+    "myNumber": "+16787561260"
 }
