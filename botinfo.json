@@ -6,6 +6,8 @@
     "cleverbotUser": "",
     "cleverbotKey" : "",
     "wordnikKey" : "",
-    "gmailUserName": "",
-    "gmailPass": ""
+    "twilioSID": "",
+    "twilioToken": "",
+    "twilioNumber": "",
+    "myNumber": ""
 }

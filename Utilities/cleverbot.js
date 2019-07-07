@@ -1,5 +1,5 @@
 //handles queries to cleverbot
-const info = require('../botinfo.json');
+/*const info = require('../botinfo.json');
 var cleverbot = require("cleverbot.io");
 
 //cleverbotUser
@@ -20,4 +20,4 @@ module.exports = {
             //console.log(response); //This will send a response back to the console.
           });
     }
-}
+}*/

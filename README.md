@@ -57,5 +57,6 @@ Can be called in the format '!define word', and will return a definition of the 
 
 ## **@Kovabotv2 'stuff to say'**
 
+
 Can be called in the format '@Kovabotv2 stuff to say', and is used to... have a conversation with the bot. 
 Please note, I have literally no control over what the response will be. 

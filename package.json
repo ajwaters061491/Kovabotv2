@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/ajwaters061491/Kovabotv2#readme",
   "dependencies": {
-    "cleverbot.io": "^1.0.4",
-    "nodemailer": "^5.1.1",
     "openweathermap-node": "^1.1.2",
     "request": "^2.88.0",
-    "tmi.js": "^1.2.1"
+    "tmi.js": "^1.4.5",
+    "twilio": "^3.33.0"
   }
 }
